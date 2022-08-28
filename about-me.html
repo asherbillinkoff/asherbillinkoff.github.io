@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+        }
+
+        body {
+            font-family: Helvetica, sans-serif;
+            background-color: rgb(214, 212, 209);
+        }
+
+        /*
+        .background {
+            width: 100vw;
+            height: 100vh;
+            background-image: url("generic-skyline.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+        }*/
+
+        header {
+            text-align: bottom left;
+            margin: 15px;
+        }
+
+        h1 {
+            color: black;
+            text-align: bottom;
+            margin: none;
+            padding-left: 5px;
+        }
+
+        .red-text {
+            color: red
+        }
+
+        nav {
+            display: flex;
+            background-color: black;
+            height: 40px;
+            align-items: center;
+        }
+
+        nav > ul > li {
+            background-color: black;
+            border: 1px solid white;
+            list-style-type: none;
+            display: block;
+            justify-content: center;
+        }
+
+        .navbar {
+            text-decoration: none;
+            color: white;
+            height: auto;
+            padding: 10px;
+            margin: 5px;
+
+        }
+        .navbar:hover {
+            background-color: white;
+            color: red;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .images {
+            border: 5px solid rgb(255, 255, 255);
+            max-width: 150px;
+            margin: 20px;
+        }
+
+        .summary {
+            background-color: white;
+            border: 5px solid rgb(255, 0, 0);
+            max-width: 500px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ASHER <span class="red-text">BILLINKOFF</span></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a class=navbar href="about-me.html">ABOUT ME</a></li>
+            <li><a class=navbar href="experience.html">EXPERIENCE</a></li>
+            <li><a class=navbar href="education">EDUCATION</a></li>
+            <li><a class=navbar href="interests.html">INTERESTS</a></li>
+            <li><a class=navbar href="best-of.html">BEST OF...</a></li>
+            <li><a class=navbar href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <main>
+        <img class="images" src="/asher-headshot.jpeg">
+        <article>
+            <div class="summary">
+                <p> &emsp;Welcome to Asher's professional profile. The purpose of this website is to familiarize the reader with Asher, both professionally and personally.<br>
+                    <br>&emsp;Asher is an Electrical Engineer from Canada who is interested in computer science, Fintech, Bitcoin, Tennis, Golf, Running and much more.
+                    He worked as a consulting Electrical Engineer for 4 years between Winnipeg and Toronto. During this time he gained experience in varying fields such as electrical building infrastructure design, large scale sustainable energy retrofits,
+                    and construction management.
+                </p>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
