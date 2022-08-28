@@ -56,6 +56,24 @@
       color: red;
     }
 
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+
+    #box {
+      background-color: red;
+      border: 2px solid black;
+      margin: 2em 0 1em 0;
+      max-width: 40em;
+      padding: 1em;
+      text-align: center;
+    }
+
+    #intro-song {
+      align-items: center;
+    }
+
 
     /* || NAVIGATION STYLES || */
 
@@ -122,8 +140,33 @@
       border: antiquewhite;
     }
 
+    #spinning-don {
+      border: 5px solid white;
+      border-radius: 50%;
+      max-width: 150px;
+      animation: spin 2s infinite;
+      animation-timing-function: linear;
+      margin: 2em;
+    }
 
-    /* Tablets and larger */
+    #spinning-don:hover {
+      animation: spin 1s infinite alternate;
+      animation-timing-function:cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg)
+      }
+
+      to {
+        transform: rotate(360deg)
+      }
+    }
+
+
+    /* || TABLETS AND LARGER || */
+    
     @media screen and (min-width: 30em) {
 
     h1 {
@@ -189,14 +232,19 @@
     <article>
       <p>Hi, I'm Asher.</p>
       <p>I'm an Electrical engineer with experience in building design, sustainable energy and FinTech. Coworkers would describe me as hardworking, technically adept and always willing to learn more. Throughout my career I have attained proficiency in Engineering design, project management, programming, credit card processing and financial services.</p>
-      <p>Enough about me though... You came here for the show right?</p>
-      <!--<a class="rjd2" href=""><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7aRJmzl622nk2qhnUxc1fV?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></a>-->
-      <h4>Click play below and hover your mouse over my name above!</h4>
-      <audio controls>
-        <source src="/audio/intro-trimmed.mp3" type="audio/mp3">
-      </audio>
-      <p>This website was inspired by <a href="https://www.youtube.com/watch?v=jIqeWE_Sv7E" target="_blank">this.</a></p>
+      <p>Enough about me though... <em>You came here for the show,</em> right?</p>
+      <div class="container">
+        <div id="box">
+          <h4>Click play below and hover your mouse over my name above!</h4>
+        <audio id="intro-song" controls>
+          <source src="/audio/intro-trimmed.mp3" type="audio/mp3">
+        </audio>
+        </div>
+      </div>
     </article>
+    <figure>
+      <img id="spinning-don" src="/images/mad-men-animation.jpeg">
+    </figure>
   </main>
 </body>
 </html>
