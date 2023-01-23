@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asher Billinkoff</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: none;
+      }
+
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+        background-color: antiquewhite;
+      }
+
+      /* || HEADER STYLES || */
+
+      header {
+        display: flex;
+        background-color: antiquewhite;
+        color: rgb(255, 255, 255);
+
+        background-image: url(/images/ny-skyline.png);
+        background-repeat: no-repeat;
+        background-size: 1500px 535px;
+        background-position: bottom center;
+      }
+
+      h1 {
+        font-size: 1.2em;
+        font-stretch: condensed;
+        margin-left: 0.75em;
+        align-items: bottom;
+        padding-top: 4em;
+        text-shadow: 4px 4px 4px black;
+      }
+
+      h1 > a:link {
+        color: white;
+        text-decoration: none;
+      }
+
+      .red-text {
+        color: red;
+      }
+
+      /* || NAVIGATION STYLES || */
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav a {
+        display: block;
+        background-color: black;
+        font-size: 1em;
+        text-decoration: none;
+        padding: 10px;
+        color: rgb(255, 255, 255);
+      }
+
+      nav li {
+        border: 2px solid white;
+      }
+
+      nav li:last-child {
+        border: none;
+      }
+
+      nav a:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid red;
+      }
+
+      #slick-rick {
+        background-color: antiquewhite;
+        color: antiquewhite;
+        border: antiquewhite;
+      }
+
+      /* || MAIN IMAGE GALLERY STYLES || */
+
+      section#photos {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1em;
+      }
+
+      figure {
+        margin: 1em;
+      }
+
+      figure img {
+        width: 16em;
+        height: 16em;
+        object-fit: cover;
+      }
+
+      #drone-video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2em;
+      }
+
+      /* Tablets and larger */
+      @media screen and (min-width: 30em) {
+        h1 {
+          font-size: 2em;
+        }
+
+        header > a:link {
+          color: white;
+          text-decoration: none;
+        }
+
+        nav ul {
+          display: flex;
+          background-color: black;
+        }
+
+        nav li {
+          border: 1px solid white;
+          font-size: 1em;
+          flex-basis: 220px;
+          flex-grow: 1;
+        }
+
+        nav a {
+          padding: 10px;
+        }
+
+        a#slick-rick {
+          background-color: black;
+          border: 1px solid white;
+          color: black;
+          flex-grow: 3;
+        }
+
+        #slick-rick:hover {
+          background-color: black;
+          color: black;
+        }
+
+        p {
+          font-stretch: ultra-condensed;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ASHER <span class="red-text">BILLINKOFF</span></h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/index.html">HOME</a></li>
+        <li><a href="/experience.html">EXPERIENCE</a></li>
+        <li><a href="/photography.html">PHOTOGRAPHY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li>
+          <a id="slick-rick" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            >GOTCHA :)</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div id="drone-video">
+        <iframe
+          src="/images/drone-winnipeg.mp4"
+          title="Drone Video of Winnipeg"
+          height="565px"
+          width="1000px"
+        ></iframe>
+      </div>
+      <section id="photos">
+        <figure>
+          <a href="/images/travel-photos/black-cat.jpg" target="_blank"
+            ><img src="/images/travel-photos/black-cat.jpg" title="Wailing Cat"
+          /></a>
+        </figure>
+        <figure>
+          <a href="/images/travel-photos/IMG_0994.JPG" target="_blank"
+            ><img src="/images/travel-photos/IMG_0994.JPG" title=""
+          /></a>
+        </figure>
+        <figure>
+          <a href="/images/travel-photos/IMG_20190701_135137.jpg"
+            ><img src="/images/travel-photos/IMG_20190701_135137.jpg"
+            title="""></a
+          >
+        </figure>
+        <figure>
+          <a href="/images/travel-photos/IMG_20190702_225607.jpg"
+            ><img src="/images/travel-photos/IMG_20190702_225607.jpg" title=""
+          /></a>
+        </figure>
+        <figure>
+          <a href="/images/travel-photos/IMG_20190703_124423.jpg"
+            ><img src="/images/travel-photos/IMG_20190703_124423.jpg" title=""
+          /></a>
+        </figure>
+        <figure>
+          <a href="/images/travel-photos/IMG_20190706_125116.jpg"
+            ><img src="/images/travel-photos/IMG_20190706_125116.jpg" title=""
+          /></a>
+        </figure>
+        <figure>
+          <a href="/images/travel-photos/IMG_20190706_132215_3.jpg"
+            ><img
+              src="/images/travel-photos/IMG_20190706_132215_3.jpg"
+              title=""
+          /></a>
+        </figure>
+        <figure>
+          <a
+            href="/images/travel-photos/IMG_20190706_144659.jpg"
+            target="_blank"
+            ><img src="/images/travel-photos/IMG_20190706_144659.jpg" title=""
+          /></a>
+        </figure>
+        <figure>
+          <a href="/images/travel-photos/IMG_2107.JPG" target="_blank"
+            ><img src="/images/travel-photos/IMG_2107.JPG" title=""
+          /></a>
+        </figure>
+        <figure>
+          <a href="/images/travel-photos/IMG_3204.JPG" target="_blank"
+            ><img src="/images/travel-photos/IMG_3204.JPG" title=""
+          /></a>
+        </figure>
+        <figure>
+          <a href="/images/travel-photos/IMG_3376.JPG" target="_blank"
+            ><img src="/images/travel-photos/IMG_3376.JPG" title=""
+          /></a>
+        </figure>
+        <figure>
+          <a href="/images/travel-photos/IMG_3390.JPG" target="_blank"
+            ><img src="/images/travel-photos/IMG_3390.JPG" title=""
+          /></a>
+        </figure>
+        <figure>
+          <a href="/images/travel-photos/IMG_3421.JPG" target="_blank"
+            ><img src="/images/travel-photos/IMG_3421.JPG" title=""
+          /></a>
+        </figure>
+        <figure>
+          <a href="/images/travel-photos/IMG_3498.JPG" target="_blank"
+            ><img src="/images/travel-photos/IMG_3498.JPG" title=""
+          /></a>
+        </figure>
+        <figure>
+          <a href="/images/travel-photos/IMG_3539.JPG" target="_blank"
+            ><img src="/images/travel-photos/IMG_3539.JPG" title=""
+          /></a>
+        </figure>
+        <figure>
+          <a href="/images/travel-photos/IMG_3563.JPG" target="_blank"
+            ><img src="/images/travel-photos/IMG_3563.JPG" title=""
+          /></a>
+        </figure>
+      </section>
+    </main>
+  </body>
+</html>

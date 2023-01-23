@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asher Billinkoff</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: none;
+      }
+
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+        background-color: antiquewhite;
+      }
+
+      /* || HEADER STYLES || */
+
+      header {
+        display: flex;
+        background-color: antiquewhite;
+        color: rgb(255, 255, 255);
+
+        background-image: url(/images/ny-skyline.png);
+        background-repeat: no-repeat;
+        background-size: 5981px 2138px;
+        background-position: top center;
+        transition: background-size 10s, background-position 4s;
+      }
+
+      header:hover {
+        background-size: 1000px 357px;
+        background-position: bottom center;
+      }
+
+      h1 {
+        font-size: 1.2em;
+        font-stretch: condensed;
+        margin-left: 0.75em;
+        align-items: bottom;
+        padding-top: 4em;
+        text-shadow: 0px 2px 2px black;
+      }
+
+      h1 > a:link {
+        color: white;
+        text-decoration: none;
+      }
+
+      .red-text {
+        color: red;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+
+      #box {
+        background-color: red;
+        border: 2px solid black;
+        margin: 2em 0 1em 0;
+        max-width: 40em;
+        padding: 1em;
+        text-align: center;
+      }
+
+      #intro-song {
+        align-items: center;
+      }
+
+      #btn {
+        background-color: transparent;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+        border: none;
+        color: #eeeeee;
+        cursor: pointer;
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 20px;
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      @keyframes glowing {
+        0% {
+          background-color: #a80505;
+          box-shadow: 0 0 3px #a80505;
+        }
+        50% {
+          background-color: #ff3333;
+          box-shadow: 0 0 10px #ff3333;
+        }
+        100% {
+          background-color: #a80505;
+          box-shadow: 0 0 3px #a80505;
+        }
+      }
+
+      #btn {
+        animation: glowing 1300ms infinite;
+      }
+
+      /* || NAVIGATION STYLES || */
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav a {
+        display: block;
+        background-color: black;
+        font-size: 1em;
+        text-decoration: none;
+        padding: 10px;
+        color: rgb(255, 255, 255);
+      }
+
+      nav li {
+        border: 2px solid white;
+      }
+
+      nav li:last-child {
+        border: none;
+      }
+
+      nav a:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid red;
+      }
+
+      /* || MAIN STYLES || */
+
+      main {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1em;
+      }
+
+      aside {
+        margin: 2em;
+      }
+
+      aside img {
+        border: 5px solid white;
+        border-radius: 50%;
+        max-width: 150px;
+      }
+
+      article {
+        max-width: 40em;
+        padding: 0 1em 1em 1em;
+      }
+
+      #bio {
+        background-color: rgb(239, 239, 239);
+        border-radius: 10px;
+        border: black 1px solid;
+        padding: 1em;
+        line-height: 1.5;
+      }
+
+      #slick-rick {
+        background-color: antiquewhite;
+        color: antiquewhite;
+        border: antiquewhite;
+      }
+
+      #spinning-don {
+        border: 5px solid white;
+        border-radius: 50%;
+        max-width: 150px;
+        animation: spin 2s infinite;
+        animation-timing-function: linear;
+        margin: 1em;
+      }
+
+      #spinning-don:hover {
+        animation: spin 1s infinite alternate;
+        animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* || TABLETS AND LARGER || */
+
+      @media screen and (min-width: 30em) {
+        header {
+          display: flex;
+          background-color: antiquewhite;
+          color: rgb(255, 255, 255);
+
+          background-image: url(./images/ny-skyline.png);
+          background-repeat: no-repeat;
+          background-size: 5981px 2138px;
+          background-position: top center;
+          transition: background-size 12s, background-position 4s;
+        }
+
+        header:hover {
+          background-size: 1500px 535px;
+          background-position: bottom center;
+        }
+
+        header > a:link {
+          color: white;
+          text-decoration: none;
+        }
+
+        h1 {
+          font-size: 2em;
+        }
+
+        nav ul {
+          display: flex;
+          background-color: black;
+        }
+
+        nav li {
+          border: 1px solid white;
+          font-size: 1em;
+          flex-basis: 220px;
+          flex-grow: 1;
+        }
+
+        nav a {
+          padding: 10px;
+        }
+
+        p {
+          font-stretch: ultra-condensed;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header title="Hover here for full effect!">
+      <h1>
+        ASHER <span class="red-text">BILLINKOFF </span
+        ><button id="btn"><i class="las la-play"></i></button>
+      </h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/index.html">HOME</a></li>
+        <li><a href="/experience.html">EXPERIENCE</a></li>
+        <li><a href="/photography.html">PHOTOGRAPHY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li></li>
+      </ul>
+    </nav>
+    <main>
+      <aside>
+        <img src="/images/asher-headshot.jpeg" />
+      </aside>
+      <article>
+        <p id="bio">
+          Asher is a full stack developer with proficiency in JS, Python, HTML,
+          CSS, React and Express/NodeJS. He previously worked as an electrical
+          design engineer, a construction manager and a technical analyst at one
+          of Canada's largest FinTech startups. He is hardworking, technically
+          adept and always eager to learn more. From his experience he has
+          obtained a strong understanding of Engineering design, project
+          management, credit card processing and transactions. See the
+          <span><a href="/experience">experience</a></span> page for more.
+        </p>
+      </article>
+      <figure>
+        <img id="spinning-don" src="./images/mad-men-animation.jpeg" />
+      </figure>
+    </main>
+    <script>
+      const playBtn = document.getElementById("btn");
+
+      playBtn.addEventListener("click", () => {
+        const audio = new Audio("/audio/intro-trimmed.mp3");
+        audio.play();
+      });
+    </script>
+  </body>
+</html>
