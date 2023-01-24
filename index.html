@@ -153,6 +153,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         margin: 1em;
+        padding: 5em;
       }
 
       aside {
@@ -171,9 +172,9 @@
       }
 
       #bio {
-        background-color: rgb(239, 239, 239);
-        border-radius: 10px;
-        border: black 1px solid;
+        background-color: rgb(255, 255, 255);
+        /* box-shadow: 2px 2px 3px 3px grey; */
+        border: 1px solid black;
         padding: 1em;
         line-height: 1.5;
       }
@@ -196,6 +197,31 @@
       #spinning-don:hover {
         animation: spin 1s infinite alternate;
         animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+
+      .cardholder {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 20em;
+        height: 28em;
+        background-color: white;
+        padding: 3em;
+        margin-top: 6em;
+        margin-bottom: 10em;
+        box-shadow: 2px 2px 3px 3px grey;
+        line-height: 1.5;
+      }
+
+      .card-title {
+        font-weight: 600;
+        color: red;
       }
 
       @keyframes spin {
@@ -256,6 +282,16 @@
         p {
           font-stretch: ultra-condensed;
         }
+
+        /* || FOOTER STYLES || */
+
+        footer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 5em;
+          color: rgb(123, 123, 123);
+        }
       }
     </style>
   </head>
@@ -295,6 +331,38 @@
         <img id="spinning-don" src="./images/mad-men-animation.jpeg" />
       </figure>
     </main>
+    <div class="cardholder">
+      <div class="card elec">
+        <i class="las la-4x la-plug"></i>
+        <p class="card-title">Electrical Engineer</p>
+        <p>
+          Professional electrical engineer with experience in lighting design,
+          electrical systems and project management. Worked closely with
+          Designers, Engineers and Architects to deliver plans on tight
+          timelines.
+        </p>
+      </div>
+      <div class="card bank">
+        <i class="las la-4x la-code"></i>
+        <p class="card-title">Full Stack Developer</p>
+        <p>
+          Experience with Python, JS, React, HTML, CSS, NodeJS and SQL.
+          Participated in a half-year full-time intensive bootcamp which covered
+          basic programming principles through to advanced GitHub team projects.
+        </p>
+      </div>
+      <div class="card dev">
+        <i class="las la-4x la-university"></i>
+        <p class="card-title">FinTech Analyst</p>
+        <p>
+          Investigated customer support escalations and carefully defined new
+          problems all while learning about credit card processing, fraud and
+          the banking system from the inside. Collaborated with a close-knit
+          team to deliver expedient and reliable results.
+        </p>
+      </div>
+    </div>
+    <footer>Copyright © 2023 Asher Billinkoff Ltd.</footer>
     <script>
       const playBtn = document.getElementById("btn");
 
