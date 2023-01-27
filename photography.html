@@ -116,6 +116,27 @@
         margin-top: 2em;
       }
 
+      .card {
+        background-color: white;
+        padding: 1.5em;
+        max-width: 40em;
+        box-shadow: 2px 2px 3px 3px grey;
+        margin: 3em;
+      }
+
+      .card-title {
+        color: red;
+        font-weight: 600;
+      }
+
+      .video-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2em;
+      }
+
       /* Tablets and larger */
       @media screen and (min-width: 30em) {
         h1 {
@@ -179,14 +200,23 @@
       </ul>
     </nav>
     <main>
-      <div id="drone-video">
-        <iframe
-          src="https://drive.google.com/file/d/1zzVlWXPls0MeXI_aURWlk6v0C6cPwcWl/preview"
-          title="Drone Video of Winnipeg"
-          height="565px"
-          width="1000px"
-          allow="autoplay"
-        ></iframe>
+      <div class="video-container">
+        <div id="drone-video">
+          <iframe
+            src="https://drive.google.com/file/d/1zzVlWXPls0MeXI_aURWlk6v0C6cPwcWl/preview"
+            title="Drone Video of Winnipeg"
+            height="565px"
+            width="1000px"
+            allow="autoplay"
+          ></iframe>
+        </div>
+        <div class="card">
+          <p class="card-title">Passion Project:</p>
+          <p> I have always been passionate about photography and videography.
+            I recently purchased a DJI Mini 2 and had the opportunity to make this video.
+            Drone videography has quickly become one of my favourite new hobbies.</p>
+          </p>
+        </div>
       </div>
       <section id="photos">
         <figure>
