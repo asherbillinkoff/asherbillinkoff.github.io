@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working on [clubhub e-commerce](https://github.com/asherbillinkoff/3d-maze)
 
-- 🌱 I’m currently learning **Flutter, ExpressJS**
+- 🌱 I’m currently learning **Flutter
 
 - 👨‍💻 All of my projects are available at [https://github.com/asherbillinkoff](https://github.com/asherbillinkoff)
 
